@@ -1,0 +1,35 @@
+#homepage {
+	display: block;
+}
+
+#homepage1 {
+	display: block;
+}
+
+#homepage2 {
+	display: none;
+}
+
+#homepage3 {
+	display: none;
+}
+
+#homepage4 {
+	display: none;
+}
+
+#homepage5 {
+	display: none;
+}
+
+.click2Play {
+
+}
+
+p.titleLastHome {
+	animation: pulse 4s ease infinite;
+	-webkit-animation: pulse 4s ease infinite;
+	-moz-animation: pulse 4s ease infinite;
+	-o-animation: pulse 4s ease infinite;
+	-ms-animation: pulse 4s ease infinite;
+}

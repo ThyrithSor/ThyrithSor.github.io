@@ -1,0 +1,64 @@
+#creditpage {
+	display: none;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	max-height: 100vh;
+	max-width: 100vw;
+}
+
+.Phearoth-style {
+	/*margin-top: 15vw;*/
+	/*font-family: brunoace;*/
+	font-size: 4vw;
+	text-align: center;
+	color: white;
+	vertical-align: middle;
+}
+
+.Phearoth-image {
+	position: relative;
+}
+
+#creditpage1 {
+	display: block;
+}
+
+#creditpage2 {
+	display: none;
+}
+
+#creditpage3 {
+	display: none;
+}
+
+#creditpage4 {
+	display: none;
+}
+
+#creditpage5 {
+	display: none;
+}
+
+#creditpage6 {
+	display: none;
+}
+
+#creditpage7 {
+	display: none;
+}
+
+#creditpage8 {
+	display: none;
+}
+
+#creditpage9 {
+	display: none;
+}
+
+#creditpage10 {
+	display: none;
+}
+
+#creditpage11 {
+	display: none;
+}

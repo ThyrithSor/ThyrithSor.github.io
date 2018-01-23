@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title class="en" style="display: none">IQ Test</title>
+	<title class="kh">ល្បងប្រាជ្ញា</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- animate CSS -->
+	<link rel="stylesheet" href="css/animate.css">
+
+	<!-- self CSS -->
+	<link rel="stylesheet" href="css/keyframes.css">
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="css/homepage.css">
+	<link rel="stylesheet" href="css/creditpage.css">
+	<link rel="stylesheet" href="css/testpage.css">
+	<link rel="stylesheet" href="css/aboutpage.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/eyestyle.css">
+
+	<!-- font awesome -->
+
+	<!-- <link rel="stylesheet" type="text/css" href="font-awesome.min.css"> -->
+
+	<!-- jQuery library -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/wow.min.js"></script>
+
+	<script src="js/modernizr.custom.js"></script>
+
+	<!-- <script src="js/w3data.js"></script> -->
+	<script>
+		new WOW().init();
+	</script>
+
+	<style type="text/css">
+		@font-face {
+			font-family: brunoace;
+			src: url(font/BrunoAceSC-Regular.ttf);
+		}
+
+		@font-face {
+			font-family: khmermuol;
+			src: url(font/KhmerMuol.ttf);
+		}
+
+		@font-face {
+			font-family: advent;
+			src: url(font/AdventPro-Regular.ttf);
+		}
+
+		@font-face {
+			font-family: akbalthomkhmerbasic;
+			src: url(font/AKbalthom_KhmerBasic.ttf);
+		}
+
+		@font-face {
+			font-family: josefin;
+			src: url(font/JosefinSansStd-Light.otf);
+		}
+
+		@font-face {
+			font-family: kantumruylight;
+			src: url(font/Kantumruy-Light.ttf);
+		}
+
+		@font-face {
+			font-family: comfortaa;
+			src: url(font/Comfortaa-Light.ttf);
+		}
+
+		@font-face {
+			font-family: khmeroswatphnom;
+			src: url(font/KhmerOSwatphnom.ttf);
+		}
+
+	</style>
+
+
+</head>
+<body id="ImTheBody" class="animated fadeIn">
+	<div>
+		<div id="the-eye" class="eye">
+			<div class="iris">
+				<div class="pupil">
+					<div class="pupil-shine"></div>
+				</div>
+			</div>
+		    <div class="eyeshine"></div>
+			<div id="the-lids" class="lids"></div>
+		</div>
+	<!-- <a href="content/started.html"><img title="Our Information" class="brain" id="ic_brain" src="img/brain.png" style="height: 5vw; width: 5.7vw"></a> -->
+	<div class="language" style="position: absolute; top: 1vw; right: 35px; z-index: 1001; width: calc(60px + 2.25vw);">
+		<img id="lang-kh" title="ភាសាខ្មែរ" src="img/kh.png" style="width: 40%; opacity: 0.5">
+		<img id="lang-en" title="English" src="img/en.png" style="margin-left: 10%; width: 40%; opacity: 1">
+	</div>
+
+	<div id="invert" style="position: fixed; bottom: 0.5vw; right: 35px; width: calc(10px + 0.25vw); z-index: 1001">
+		<img src="img/invert.png" title="Invert color" style="width: 100%">
+	</div>
+
+	<div class="row menuIcon">
+		<div class="mask containerMenu" title="Menu" style="font-family: comfortaa; font-size: 1vw" onclick="viewSidebar(this)">
+			<div class="bar animated fadeInDown wow" data-wow-delay="0ms"></div>
+			<div class="bar animated fadeInDown wow" data-wow-delay="100ms"></div>
+			<div class="bar animated fadeInDown wow" data-wow-delay="200ms"></div>
+		</div>
+
+	</div>
+
+
+	<div id="header" class="sidebar comfortaa">
+
+		
+
+		<ul class="navigation">
+			<li id="home" class="item wow fadeInDown animated active" data-wow-delay="0ms">
+				<span class="en comfortaa">Home</span>
+				<span class="kh comfortaa">ទំព័រដើម</span>
+			</li>
+			<li id="test" class="item wow fadeInDown animated" data-wow-delay="100ms">
+				<span class="en comfortaa">Test</span>
+				<span class="kh comfortaa">ប្រឡង</span>
+			</li>
+			<li id="about" class="item wow fadeInDown animated" data-wow-delay="200ms">
+				<span class="en comfortaa">About</span>
+				<span class="kh comfortaa">អំពីនេះ</span>
+			</li>
+			<li id="credit" class="item wow fadeInDown animated" data-wow-delay="300ms">
+				<span class="en comfortaa">Credit</span>
+				<span class="kh comfortaa">ក្រេឌីត</span>
+			</li>
+			<li id="more" class="item wow fadeInDown animated" data-wow-delay="400ms">
+				<span class="en comfortaa">More</span>
+				<span class="kh comfortaa">ផ្សេងទៀត</span>
+			</li>
+		</ul>
+			
+	</div>
+
+	<div class="container" id="whole-screen" style="text-align: center;">
+
+		<div class="row" style="text-align: center; border: 0px solid blue">
+			<div  class="row container" id="body-content" style="text-align: center; width: 100vw; border: 0px solid green">
+
+				<div id="homepage" style="padding-bottom: 20vh; transition: 1s;">
+					<div id="homepage1" style="position: relative;">
+
+						<div id="big-content" class="row wow fadeInRight animated" data-wow-delay="0ms" data-wow-duration="1s" style="height: 9vw">
+							<p id="page01" class="en content brunoace" onclick="changePage01()">Are you a genius?</p>
+							<p id="page01" class="kh content brunoace" onclick="changePage01()">តើអ្នកឆ្លាតដែរឬទេ?</p>
+						</div>
+						<div id="small-content" class="row" style="margin-right: 12vw">
+							<div class="fadeIn animated wow col-xs-12 col-sm-11 col-md-11 col-lg-10" data-wow-duration="3s" style="text-align: right">
+								<p class="en josefin" style="font-size: 2vw; color: black">
+									Imagination is more important than knowledge<br>
+									<p style="font-size: 2vw; color: black; animation: 1s ease-in;" class="josefin en wow bounce animated">~Albert Einstein</p>
+								</p>
+								<p class="kh josefin" style="font-size: 1.5vw; color: black">
+									ក្ដីស្រមៃសំខាន់ជាងការចងចាំ<br>
+									<p style="font-size: 1.5vw; color: black; animation: 1s ease-in;" class="josefin kh wow bounce animated">~អាល់បឺត អាញស្តាញ</p>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div id="homepage2" style="position: relative;">
+						<div id="big-content" class="row">
+							<p class="en wow fadeInRight animated josefin" data-wow-duration="1s" style="color: black; font-size: 3vw">Dedicate to</p>
+							<p class="kh wow fadeInRight animated josefin" data-wow-duration="1s" style="color: black; font-size: 3vw">ឧទ្ទិសជូន</p>
+						</div>
+					</div>
+					<div id="homepage3">
+						<div class="einstein container" style="text-align: center; width: 100%">
+							<img id="einstein" src="img/einstein.png" style="width: 50vw;" class="animated fadeIn wow" data-wow-duration="5s">
+						</div>
+					</div>
+					<div id="homepage4">
+						<div class="tesla container" style="text-align: center; width: 100%">
+							<img id="tesla" src="img/tesla.png" style="width: 50vw;" class="animated fadeIn wow" data-wow-duration="5s">
+						</div>
+					</div>
+					<div id="homepage5">
+						<div class="last_home container" style="text-align: center; width: 100%;">
+							<div class="click2Play row fadeIn animated" data-wow-duration="2000ms" data-wow-delay="1000ms" style="width: auto;">
+								<p class="en titleLastHome pulse animated advent" data-wow-duration="1500ms" data-wow-delay="0ms">
+									Click to start IQ test
+								</p>
+								<p class="kh titleLastHome pulse animated advent" data-wow-duration="1500ms" data-wow-delay="0ms">
+									ចុចសញ្ញាខាងក្រោមដើម្បីចាប់ផ្ដើមប្រឡងប្រាជ្ញា<br>
+								</p>
+							</div>
+							<div class="btn_play">
+								<img id="btn_play" src="img/btn_play.png" class="animated fadeIn" data-wow-duration="5s" style="margin-top: 10px; width: 7vw; height: 7vw" onclick="chooseTest()">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="testpage" style="transition: 1s">
+					<!-- the test page here -->
+					<div class="nimolProgress_bar row fadeIn animated" style="text-align: center">
+						<div id="divProgressBar" style="width: 70%; margin-left: auto; margin-right: auto">
+							<div id="progBar">
+								<div id="prog"></div>
+							</div>
+							<div id="progNum"><span class="en josefin">1/20</span><span class="kh josefin">១/២០</span></div>
+							<!-- <div class="kh" id="progNum">១/២០</div> -->
+						</div>
+					</div>
+
+					<div style="width: 30vw; z-index: 1000; position: fixed; bottom: 10vw; right: 10vw" class="congrateImage">
+						<div style="display: none" id="imageCorrect"></div>
+
+						<div style="display: none" id="imageIncorrect"></div>
+					</div>
+
+					<div style="bottom: 2vw; left: 1vw; right: 1.75vw; text-align: left; position: fixed; z-index: 9">
+						<table style="width: 100%; padding-left: 0.25vw; padding-right: 0.25vw">
+							<tr>
+								<td id="hintContent" class="animated" style="padding-left: 0.25vw; padding-right: 0.25vw; display: none; background: white; border-radius: 1vw; border: 0.04vw solid blue">
+
+								</td>
+							</tr>
+							<tr>
+								<td id="hintButton" class="fadeIn animated" style="bottom: 0px; width: 3.5vw; text-align: left;" valign="bottom">
+									<button id="hint"><span class="en josefin">hint -1</span><span class="kh josefin">គន្លឹះ -១</span></button>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="problem josefin">
+						<div class="q1">
+							<p><span class="en josefin">Which two numbers should replace the question marks?<br>
+							19, 20, 21, </span><span class="kh josefin">តើលេខអ្វីខ្លះដែលអាចជំនួសសញ្ញាសួរទាំងពីរ?<br>
+							១៩, ២០, ២១, </span><input type="text" id="ans1001" class="q1_input" placeholder="﹖"> , <input type="text" id="ans2001" class="q1_input" placeholder="﹖"><span class="en josefin">, 26, 28, 32, 33, 40</span><span class="kh josefin">, ២៦, ២៨, ៣២, ៣៣, ៤០</span></p>
+
+							<br>
+							<button type = "button" id="submit1" class = "btn-ans"><span class="en josefin">Submit</span><span class="kh josefin">ឆ្លើយរួច</span></button>
+						</div>
+						<div class="q2">
+							<p class="en">Which number is the odd one out?</p>
+							<p class="kh">តើលេខមួយណាដែលខុសគេ?</p>
+							<div>
+								<hr>
+							</div>
+							<button id="ans21" class="btn-ans"><span class="en josefin">84129</span><span class="kh josefin">៨៤១២៩</span></button>
+							<button id="ans22" class="btn-ans"><span class="en josefin">32418</span><span class="kh josefin">៣២៤១៨</span></button> 
+							<button id="ans23" class="btn-ans"><span class="en josefin">47632</span><span class="kh josefin">៤៧៦៣២</span></button> 
+							<button id="ans24" class="btn-ans"><span class="en josefin">36119</span><span class="kh josefin">៣៦១១៩</span></button> 
+							<button id="ans25" class="btn-ans"><span class="en josefin">67626</span><span class="kh josefin">៦៧៦២៦</span></button> 
+							<button id="ans26" class="btn-ans"><span class="en josefin">72927</span><span class="kh josefin">៧២៩២៧</span></button>
+						</div>
+						<div class="q3">
+							<p class="en">329 : 15<br>
+								746 : 34<br>
+							Which numbers below have the same relationship <br>to each other as the two sets of numbers above?
+							</p>
+							<p class="kh">៣២៩ : ១៥<br>
+								៧៤៦ : ៣៤<br>
+							តើលេខមួយគូណាដែលមានទំនាក់ទំនងគ្នា <br>ដូចលេខទាំងពីរគូខាងលើនេះ?
+							</p>
+							<div>
+								<hr>
+							</div>
+							<button type = "button" id="ans31" class = "btn-ans"><span class="en josefin">287 : 22</span><span class="kh josefin">២៨៧ : ២២</span></button>
+							<button type = "button" id="ans32" class = "btn-ans"><span class="en josefin">698 : 62</span><span class="kh josefin">៦៩៨ : ៦២</span></button>
+							<button type = "button" id="ans33" class = "btn-ans"><span class="en josefin">942 : 68</span><span class="kh josefin">៩៤២ : ៦៨</span></button>
+							<button type = "button" id="ans34" class = "btn-ans"><span class="en josefin">382 : 12</span><span class="kh josefin">៣៨២ : ១២</span></button>
+							<button type = "button" id="ans35" class = "btn-ans"><span class="en josefin">749 : 35</span><span class="kh josefin">៧៤៩ : ៣៥</span></button>
+						</div>
+						<div class="q4">
+							<p class="en">
+								A B C D E F G H<br>
+								What letter is three to the right of the letter that<br> comes immediately to
+								the left of the letter three to the left<br> of the letter two to the
+								right of the letter F ?
+							</p>
+							<p class="kh">
+								A B C D E F G H<br>
+								តើអក្សរមួយណាដែលនៅលំដាប់ទី៣ខាងស្ដាំនៃអក្សរដែល<br> នៅខាងឆ្វេងនៃអក្សរដែលនៅលំដាប់ទី៣ខាងឆ្វេង<br>នៃអក្សរដែលនៅលំដាប់ទី២ខាងស្ដាំនៃអក្សរ F ?
+							</p>
+							<div>
+								<hr>
+							</div>
+							<span class="en josefin">Answer :</span><span class="kh josefin">ចម្លើយ :</span>
+							<input type="text" id="ans1004" class="q4_input"><br><br>
+							<button type = "button" id="submit4" class = "btn-ans"><span class="en josefin">Submit</span><span class="kh josefin">ឆ្លើយរួច</span></button>
+						</div>
+						<div class="q5">
+							<p class="en">
+								Mary, who is sixteen years old, is four times as old as<br> her brother. How old will Mary be when she is twice as<br> old as her brother?
+							</p>
+							<p class="kh">
+								ឥឡូវ ម៉ារីមានអាយុ១៦ឆ្នាំ អាយុស្មើនឹងប្អូនរបស់នាង<br>គុណនឹងបួន. ចុះនៅពេលដែលនាងមានអាយុស្មើនឹង<br>ប្អូនប្រុសនាងគុណនឹងពីរ តើម៉ារីមានអាយុប៉ុន្មាន?
+							</p>
+							<div>
+								<hr>
+							</div>
+							<button type = "button" id="ans51" class = "btn-ans"><span class="en josefin">20</span><span class="kh josefin">២០</span></button>
+							<button type = "button" id="ans52" class = "btn-ans"><span class="en josefin">24</span><span class="kh josefin">២៤</span></button>
+							<button type = "button" id="ans53" class = "btn-ans"><span class="en josefin">25</span><span class="kh josefin">២៥</span></button>
+							<button type = "button" id="ans54" class = "btn-ans"><span class="en josefin">26</span><span class="kh josefin">២៦</span></button>
+							<button type = "button" id="ans55" class = "btn-ans"><span class="en josefin">28</span><span class="kh josefin">២៨</span></button>
+						</div>
+						<div class="q6">
+							<p class="en">
+								Which one of the five choices makes the best comparison?<br>PEACH is to HCAEP as 46251 is to:
+							</p>
+							<p class="kh">
+								ក្នុងចំណោមលេខខាងក្រោម តើមួយណាដែលសក្ដិសមបំផុត?<br>PEACH ត្រូវនឹង HCAEP ចំណែកឯ 46251 ត្រូវនឹង:
+							</p>
+							<div>
+								<hr>
+							</div>
+							<button type = "button" id="ans61" class = "btn-ans"><span class="en josefin">25641</span><span class="kh josefin">២៥៦៤១</span></button>
+							<button type = "button" id="ans62" class = "btn-ans"><span class="en josefin">26451</span><span class="kh josefin">២៦៤៥១</span></button>
+							<button type = "button" id="ans63" class = "btn-ans"><span class="en josefin">12654</span><span class="kh josefin">១២៦៥៤</span></button>
+							<button type = "button" id="ans64" class = "btn-ans"><span class="en josefin">51462</span><span class="kh josefin">៥១៤៦២</span></button>
+							<button type = "button" id="ans65" class = "btn-ans"><span class="en josefin">15264</span><span class="kh josefin">១៥២៦៤</span></button>
+						</div>
+						<div class="q7">
+							<p class="en">
+								Which one of the five is least like the other four?
+							</p>
+							<p class="kh">
+								ក្នុងចំណោមសត្តទាំងប្រាំ តើសត្វមួយណាដែលនៅក្រៅក្រុម?
+							</p>
+							<div>
+								<hr>
+							</div>
+							<button type = "button" id="ans71" class = "btn-ans"><span class="en josefin">Dog</span><span class="kh josefin">ឆ្កែ</span></button>
+							<button type = "button" id="ans72" class = "btn-ans"><span class="en josefin">Mouse</span><span class="kh josefin">កណ្ដុរ</span></button>
+							<button type = "button" id="ans73" class = "btn-ans"><span class="en josefin">Lion</span><span class="kh josefin">តោ</span></button>
+							<button type = "button" id="ans74" class = "btn-ans"><span class="en josefin">Snake</span><span class="kh josefin">ពស់</span></button>
+							<button type = "button" id="ans75" class = "btn-ans"><span class="en josefin">ELephant</span><span class="kh josefin">ដំរី</span></button>
+						</div>
+						<div class="q8">
+							<p>
+								<span class="en josefin">Eight identical sizes squares of paper have<br>been place
+								on top of one another as following.<br>Which one is at the bottom?</span>
+								<span class="kh josefin">ក្រដាស៨សន្លឹកត្រូវបានកាត់ជារាងការេប៉ុនៗគ្នា<br>ត្រូវបានដាក់ត្រួតៗពីលើគ្នាដូចរូបខាងក្រោម.<br>តើក្រដាសទីប៉ុន្មានដែលនៅក្រោមគេបំផុត?</span>
+								<br>
+								<img src="./img/008_img.png" style="width: 14vw; height: 14vw;">
+							</p>
+							<div>
+								<hr>
+							</div>
+							<span class="en josefin">Answer:</span><span class="kh josefin">ចម្លើយ</span>
+							<input type="text" id="ans1008" class="q1_input">
+							<br><br>
+							<button type="button" id="submit8" class="btn-ans"><span class="en josefin">Submit</span><span class="kh josefin">ឆ្លើយរួច</span></button>
+						</div>
+						<div class="q9">
+							<table border="2" style="width: 20%">
+								<tr>
+									<td><span class="en josefin">9</span><span class="kh josefin">៩</span></td>
+									<td><span class="en josefin">38</span><span class="kh josefin">៣៨</span></td>
+									<td><span class="en josefin">47</span><span class="kh josefin">៤៧</span></td>
+									<td><span class="en josefin">4</span><span class="kh josefin">៤</span></td>
+								</tr>
+								<tr>
+									<td><span class="en josefin">6</span><span class="kh josefin">៦</span></td>
+									<td><span class="en josefin">35</span><span class="kh josefin">៣៥</span></td>
+									<td><span class="en josefin">42</span><span class="kh josefin">៤២</span></td>
+									<td>*</td>
+								</tr>
+								<tr>
+									<td><span class="en josefin">12</span><span class="kh josefin">១២</span></td>
+									<td><span class="en josefin">21</span><span class="kh josefin">២១</span></td>
+									<td><span class="en josefin">23</span><span class="kh josefin">២៣</span></td>
+									<td><span class="en josefin">27</span><span class="kh josefin">២៧</span></td>
+								</tr>
+							</table>
+							<div>
+								<hr>
+							</div>
+							<button type = "button" id="ans91" class = "btn-ans"><span class="en josefin">10</span><span class="kh josefin">១០</span></button>
+							<button type = "button" id="ans92" class = "btn-ans"><span class="en josefin">-5</span><span class="kh josefin">-៥</span></button>
+							<button type = "button" id="ans93" class = "btn-ans"><span class="en josefin">32</span><span class="kh josefin">៣២</span></button>
+							<button type = "button" id="ans94" class = "btn-ans"><span class="en josefin">18</span><span class="kh josefin">១៨</span></button>
+						</div>
+						<div class="q10">
+							<table style="width: 20%">
+								<tr>
+									<td>
+										<img src="img/010_img1.png">
+									</td>
+									<td>
+										<img src="img/010_img2.png">
+									</td>
+									<td>
+										<img src="img/010_img3.png">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="img/010_img4.png">
+									<td>
+										<img src="img/010_img5.png">
+									</td>
+									<td>
+										<img src="img/010_img6.png">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="img/010_img7.png">
+									</td>
+									<td>
+										<img src="img/010_img8.png">
+									</td>
+									<td>
+										<img src="img/010_img9.png">
+									</td>
+								</tr>
+							</table>
+							<div>
+								<hr>
+							</div>
+							<table id="ans10" style="width: 50%";>
+								<tr>
+									<td>
+										<img id="ans101" src="img/010_choice1.png">
+									</td>
+									<td>
+										<img id="ans102" src="img/010_choice2.png">
+									</td>
+									<td>
+										<img id="ans103" src="img/010_choice3.png">
+									</td>
+									<td>
+										<img id="ans104" src="img/010_choice4.png">
+									</td>
+									<td>
+										<img id="ans105" src="img/010_choice5.png">
+									</td>
+									<td>
+										<img id="ans106" src="img/010_choice6.png">
+									</td>
+								</tr>
+
+							</table>
+						</div>
+						<div class="q11">
+							<p class="en">
+								Which larger shape would be made<br>if the two section are fitted together?
+							</p>
+							<p class="kh">
+								តើរូបមួយណាជាលទ្ធផលនៃការផ្គុំ<br>រូបទាំងពីរខាងក្រោមនេះចូលគ្នា បើសិនជាផ្គុំបាន?
+							</p>
+							<table style="width: 20%">
+								<tr>
+									<td>
+										<img src="img/011_img1.png">
+									</td>
+									<td>
+										<img src="img/011_img2.png">
+									</td>
+								</tr>
+							</table>
+							<div>
+								<hr>
+							</div>
+							<table style="width: 40%">
+								<tr>
+									<td>
+										<img id="ans111" src="img/011_choice1.png">
+									</td>
+									<td>
+										<img id="ans112" src="img/011_choice2.png">
+									</td>
+									<td>
+										<img id="ans113" src="img/011_choice3.png">
+									</td>
+									<td>
+										<img id="ans114" src="img/011_choice4.png">
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="q12" >
+							<div class="row">
+								<p class="en">
+									What number should replace the question mark?
+								</p>
+								<p class="kh">
+									តើលេខអ្វីដែលត្រូវជំនួសសញ្ញាសួរ?
+								</p>
+							</div>
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+									<table border="2" style="width: 40%;">
+										<tr>
+											<td colspan="2"><span class="en josefin">3</span><span class="kh josefin">៣</span></td>
+										</tr>
+										<tr>
+											<td><span class="en josefin">3</span><span class="kh josefin">៣</span></td>
+											<td><span class="en josefin">7</span><span class="kh josefin">៧</span></td>
+										</tr>
+									</table>
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+									<table border="2" style="width: 40%;">
+										<tr>
+											<td colspan="2"><span class="en josefin">21</span><span class="kh josefin">២១</span></td>
+										</tr>
+										<tr>
+											<td><span class="en josefin">9</span><span class="kh josefin">៩</span></td>
+											<td><span class="en josefin">2</span><span class="kh josefin">២</span></td>
+										</tr>
+									</table>
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+									<table border="2" style="width: 40%;">
+										<tr>
+											<td colspan="2">?</td>
+										</tr>
+										<tr>
+											<td><span class="en josefin">4</span><span class="kh josefin">៤</span></td>
+											<td><span class="en josefin">8</span><span class="kh josefin">៨</span></td>
+										</tr>
+									</table>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+							</div>
+							<div>
+								<hr>
+							</div>
+							<br>
+							<span class="en"Answer:></span><span class="kh josefin">ចម្លើយ</span>
+							<input type="text" id="ans1012" class="q12_input"><br>
+							<button type="button" id="submit12" class="btn-ans"><span class="en josefin">Submit</span><span class="kh josefin">ឆ្លើយរួច</span></button>
+						</div>
+						<div class="q13">
+							<p class="en">
+								Four(A, B, C and D) suspect were interrograted:<br>
+							</p>
+							<p class="kh">
+								ជនសង្ស័យបួននាក់(ក, ខ, គ និង ឃ) ត្រូវបានសួរចម្លើយ:<br>
+							</p>
+							<ul>
+								<li><span class="en josefin">A: C won't cheat unless B cheated.</span><span class="kh josefin">ក: បើ ខ មិនបោកប្រាស់ គ ក៏មិនបោកប្រាស់ដែរ</span></li>
+								<li><span class="en josefin">B: Maybe one of A or C cheated.</span><span class="kh josefin">ខ: បើមិន ក ក៏ គ ដែរដែលបោកប្រាស់</span></li>
+								<li><span class="en josefin">C: B didn't cheat, it's me cheated.</span><span class="kh josefin">គ: ខ មិនបានបោកប្រាស់ទេ ខ្ញុំទើបបោកប្រាស់</span></li>	
+								<li><span class="en josefin">D: B cheated.</span><span class="kh josefin">ឃ: ខ បោកប្រាស់</span></li>
+							</ul>
+							<p class="en">
+								Only one person can be the liar, which one is correct?
+							</p>
+							<p class="kh">
+								មានតែម្នាក់ប៉ុណ្ណោះដែលនិយាយកុហក, ជម្រើសមួយណាដែរត្រូវ?
+							</p>
+							<div>
+								<hr>
+							</div>
+							<button type = "button" id="ans131" class = "btn-ans"><span class="en josefin">C lied, B cheated</span><span class="kh josefin">គ កុហក ខ បោក</span></button>
+							<button type = "button" id="ans132" class = "btn-ans"><span class="en josefin">B lied, B cheated</span><span class="kh josefin">ខ កុហក ខ បោក</span></button>
+							<button type = "button" id="ans133" class = "btn-ans"><span class="en josefin">A lied, C cheated></span><span class="kh josefin">ក កុហក គ បោក</span></button>
+							<button type = "button" id="ans134" class = "btn-ans"><span class="en josefin">D lied, C cheated</span><span class="kh josefin">ឃ កុហក គ បោក</span></button>
+						</div>
+						<div class="q14">
+							<p class="en">
+								At a conference, 12 members shook hands<br>
+								with each other before &amp; after meeting.<br>
+								How many total number of hand shakes occurred?
+							</p>
+							<p class="kh">
+								ក្នុងសន្និសីទមួយ, សមាជិក១២នាក់ចាប់ដៃគ្នា<br>
+								មុនប្រជុំ និង ក្រោយប្រជុំ.<br>
+								សរុបទាំងអស់ តើចំនួននៃការចាប់ដៃមានប៉ុន្មាន?
+							</p>
+							<div>
+								<hr>
+							</div>
+							<button type = "button" id="ans141" class = "btn-ans"><span class="en josefin">100</span><span class="kh josefin">១០០</span></button>
+							<button type = "button" id="ans142" class = "btn-ans"><span class="en josefin">132</span><span class="kh josefin">១៣២</span></button>
+							<button type = "button" id="ans143" class = "btn-ans"><span class="en josefin">145</span><span class="kh josefin">១៤៥</span></button>
+							<button type = "button" id="ans144" class = "btn-ans"><span class="en josefin">121</span><span class="kh josefin">១២១</span></button>
+						</div>
+						<div class="q15">
+							<p class="en">
+								If in a certain code language BOSTON can be writen<br>
+								as SNSNSN, then how would you write CALIFORNIA<br>
+								in the same code language?
+							</p>
+							<p class="kh">
+								ប្រសិនបើភាសាកូដមួយអាចសរសេរពាក្យ BOSTON ទៅជា<br>
+								 SNSNSN, តើគេអាចសរសេរពាក្យ CALIFORNIA<br>
+								ទៅជាអ្វីវិញ?
+							</p>
+							<div>
+								<hr>
+							</div>
+							<button type = "button" id="ans151" class = "btn-ans josefin">OAOAOA</button>
+							<button type = "button" id="ans152" class = "btn-ans josefin">LONLON</button>
+							<button type = "button" id="ans153" class = "btn-ans josefin">LOILOI</button>
+							<button type = "button" id="ans154" class = "btn-ans josefin">LONLONLONLON</button>
+						</div>
+						<div class="q16">
+							<p class="en">
+								If NEW YORK can be encrypted as PGYAQTM,<br>
+								how can you code the word CHARLOTTE?
+							</p>
+							<p class="kh">
+								បើពាក្យ បបរសកក ត្រូវបានបម្លែងជាពាក្យ ពពវឡគគ<br>
+								តើពាក្យ របងពពក ត្រូវបម្លែងទៅជាពាក្យអ្វី?
+							</p>
+							<div>
+								<hr>
+							</div>
+							<button type = "button" id="ans161" class = "btn-ans"><span class="en josefin">EICSNPVVG</span><span class="kh josefin">សភជយយឃ</span></button>
+							<button type = "button" id="ans162" class = "btn-ans"><span class="en josefin">EJCTNQVVG</span><span class="kh josefin">វពឆមមគ</span></button>
+							<button type = "button" id="ans163" class = "btn-ans"><span class="en josefin">EICTNPVVF</span><span class="kh josefin">វពជមមគ</span></button>
+							<button type = "button" id="ans164" class = "btn-ans"><span class="en josefin">EJCSMPVVG</span><span class="kh josefin">វពឆភភគ</span></button>
+						</div>
+						<div class="q17">
+							<p class="en">
+								There are five birds sitting on electric wire.<br>
+								Two were shot and killed by a hunter.<br>
+								How many are left?
+							</p>
+							<p class="kh">
+								មានសត្វចាបប្រាំឈរទំលើខ្សែភ្លើង។<br>
+								បុរសម្នាក់បាញ់ងាប់អស់ពីរ។<br>
+								តើនៅសល់ប៉ុន្មាន?
+							</p>
+							<div>
+								<hr>
+							</div>
+							<button type = "button" id="ans171" class = "btn-ans"><span class="en josefin">3</span><span class="kh josefin">៣</span></button>
+							<button type = "button" id="ans172" class = "btn-ans"><span class="en josefin">5</span><span class="kh josefin">៥</span></button>
+							<button type = "button" id="ans173" class = "btn-ans"><span class="en josefin">0</span><span class="kh josefin">០</span></button>
+							<button type = "button" id="ans174" class = "btn-ans"><span class="en josefin">2</span><span class="kh josefin">២</span></button>
+						</div>
+						<div class="q18">
+							<p class="en">
+								There is a big turtle. It is walking with a little turtle.
+								<br> The little turtle is the big turtle's son
+								<br>but the big turtle isn't the dad.
+								<br>who is the big turtle?
+							</p>
+							<p class="kh">
+								មានអណ្ដើកធំមួយក្បាល បណ្ដើរគ្នាជាមួយអណ្ដើកតូច។
+								<br>អណ្ដើកតូចជាកូនប្រុសរបស់អណ្ដើកធំ។
+								<br>ប៉ុន្តែអណ្ដើកធំនោះមិនមែនជាឪពុកទេ។
+								<br>តើអណ្ដើកធំជានរណា?
+							</p>
+							<div>
+								<hr>
+							</div>
+							<button type = "button" id="ans181" class = "btn-ans"><span class="en josefin">Stranger</span><span class="kh josefin">អ្នកដទៃ</span></button>
+							<button type = "button" id="ans182" class = "btn-ans"><span class="en josefin">A dude</span><span class="kh josefin">ជីតា</span></button>
+							<button type = "button" id="ans183" class = "btn-ans"><span class="en josefin">The mom</span><span class="kh josefin">ម្ដាយ</span></button>
+							<button type = "button" id="ans184" class = "btn-ans"><span class="en josefin">Step dad</span><span class="kh josefin">ឪពុកចុង</span></button>
+						</div>
+						<div class="q19">
+							<table style="width: 60%">
+								<tr>
+									<td>
+										<img src="img/019_img1.png">
+									</td>
+									<td>
+										<img src="img/019_img2.png">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="img/019_img3.png">
+									</td>
+									<td>
+										<img src="img/019_img4.png">
+									</td>
+								</tr>
+							</table>
+							<p class="en">
+								Which set of symbols should replace the question marks?
+							</p>
+							<p class="kh">
+								តើរូបមួយណាដែលត្រូវបំពេញប្រឡោះសញ្ញាសួរ?
+							</p>
+							<div>
+								<hr>
+							</div>
+							<table id="ans19" style="width: 60%;">
+								<tr>
+									<td>
+										<span class="en josefin">A</span><span class="kh josefin">ក</span>&nbsp;<img id="btn119" src="img/019_choice1.png">
+									</td>
+									<td>
+										<span class="en josefin">B</span><span class="kh josefin">ខ</span>&nbsp;<img id="btn219" src="img/019_choice2.png">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="en josefin">C</span><span class="kh josefin">គ</span>&nbsp;<img id="btn319" src="img/019_choice3.png">
+									</td>
+									<td>
+										<span class="en josefin">D</span><span class="kh josefin">ឃ</span>&nbsp;<img id="btn419" src="img/019_choice4.png">
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="q20"><!--H is correct id="btn2020"-->
+							<p class="en">
+								What is the letter for the two cells of *?
+							</p>
+							<p class="kh">
+								 ប្រឡោះសញ្ញា * ទាំងពីរត្រូវបំពេញដោយអក្សរតែមួយទេ តើមួយណា?
+							</p>
+							<table class="josefin" border="2" style="width: 25%">
+								<tr>
+									<td>M</td>
+									<td>I</td>
+									<td>X</td>
+									<td>A</td>
+									<td>Y</td>
+									<td>O</td>
+									<td>&nbsp;*&nbsp;</td>
+								</tr>
+								<tr>
+									<td>D</td>
+									<td>C</td>
+									<td>O</td>
+									<td>X</td>
+									<td>K</td>
+									<td>I</td>
+									<td>&nbsp;*&nbsp;</td>
+								</tr>
+							</table>
+							<div>
+								<hr>
+							</div>
+							<button id="btn120" type = "button" class = "btn-ans josefin">B</button>
+							<button id="btn220" type = "button" class = "btn-ans josefin">H</button>
+							<button id="btn320" type = "button" class = "btn-ans josefin">P</button>
+							<button id="btn420" type = "button" class = "btn-ans josefin">F</button>
+						</div>
+
+						<div class="q21">
+							<div style="font-size: 3vw" class="josefin"><span class="en josefin">Your total score:</span><span class="kh josefin">ពិន្ទុសរុបរបស់អ្នក</span></div>
+							<div id="totalScore" style="font-size: 15vw" class="josefin"></div>
+							<div id="recordScore" style="font-size: 1vw" class="josefin"></div>
+							<button id="replay" class="btn-ans" style="text-align: center; margin-top: 3vw; font-size: 3vw; width: 10vw; height: 10vw; border-radius: 5vw"><span class="en josefin">Replay</span><span class="kh josefin" style="font-size: 2.5vw;">ម្ដងទៀត</span></button>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div id="aboutpage" style="transition: 1s">
+					<!-- the about page here -->
+					<div class="Sokkang-style brunoace">
+						<div class="fadeInDown animated" style="position: fixed; width: 100vw; height: 6vw; left: 0vw; top: 0vh; background: #653a91; box-shadow: 0px 5px 8px #888888;">
+							<span class="en josefin">About</span><span class="kh josefin" style="font-size: 3vw">អំពីនេះ</span>
+						</div>
+					</div>
+
+					<div id="titles">
+						<div id="titlecontent">
+
+							<div class="row sokkangcontener josefin">
+								<p class="en" style="font-size: 3vw; padding-top: 5vw; padding-bottom: 5vw">This is our project on internet programming course</p>
+								<p class="kh" style="font-size: 3vw; padding-top: 5vw; padding-bottom: 5vw">នេះជាគម្រោងរបស់ពួកយើងលើមុខវិជ្ជា សរសេរកម្មវិធីលើអន្តរបណ្ដាញ<br><br></p>
+							</div>
+
+							<div class="row sokkangcontener josefin">
+								<p class="en">
+									We are students in	
+								</p>
+								<p class="kh">
+									ពួកយើងជានិស្សិត<br><br>
+								</p>
+								<p class="en">
+									the 17th generation of	
+								</p>
+
+								<p class="kh">
+									ជំនាន់ទី១៧<br><br>
+								</p>
+								<p class="en">
+									Department of Information	
+								</p>
+								<p class="kh">
+									ផ្នែកវិស្វកម្មពត៌មាន និង ទំនាក់ទំនង<br><br>
+								</p>
+								<p class="en">
+									and Communication Engineering	
+								</p>
+								<p class="en">
+									of Institute of Technology of Cambodia		
+								</p>
+								<p class="kh">
+									នៃវិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា<br><br>
+								</p>
+							</div>
+
+							<div class="row sokkangthank comfortaa" style="padding-top: 5vw">
+								<p class="en">
+									We would like to say thanks 
+								</p>
+								<p class="kh">
+									សូមថ្លែងអំណរគុណដ៏ជ្រាលជ្រៅ
+								</p>
+								<p class="en">	
+									to teacher
+								</p>
+								<p class="kh">ចំពោះលោកគ្រូ<br></p>
+								<br>
+								<span class="en josefin">Heng Sotharith</span>
+								<span class="kh brunoace">ហេង សុធារិទ្ធ</span>
+
+								<p class="en">
+									<br><br>for instructing us a whole
+								</p>
+								<p class="kh">
+									<br><br>ដែលបានខិតខំបង្ហាត់បង្រៀនពួកយើង
+								</p>
+
+								<p class="en">
+									semester in this course
+								</p>
+								<p class="kh">
+									ក្នុងរយៈពេលពេញមួយឆមាសកន្លងមក
+								</p>
+							</div>
+							<div class="sokkangcontener josefin">
+								<p class="en"><br><br>From us, group 7B<br><br></p>
+								<p class="kh"><br><br>ដោយក្ដីគោរពពីយើងខ្ញុំ ក្រុម7B<br><br></p>
+							</div>
+
+							<div class="sokkangcontenerimage" style="margin-left: 15vw; margin-right: 15vw;">
+								<div class="col-ls-3 col-md-3 col-sm-3 col-xs-3">
+									<img style="transition: 900ms; -webkit-transition: 900ms;" id="channimol" src="./img/channimol.jpg">
+								</div>
+								<div class="col-ls-3 col-md-3 col-sm-3 col-xs-3">
+									<img style="transition: 900ms; -webkit-transition: 900ms;" id="thyrith" src="./img/thyrith.jpg">
+								</div>
+								<div class="col-ls-3 col-md-3 col-sm-3 col-xs-3">
+									<img style="transition: 900ms; -webkit-transition: 900ms;" id="sophearoth" src="./img/sophearoth.jpg">
+								</div>
+								<div class="col-ls-3 col-md-3 col-sm-3 col-xs-3">
+									<img style="transition: 900ms; -webkit-transition: 900ms;" id="sokkang" src="./img/sokkang.jpg">
+								</div>
+								<div class="row">
+								<table style="margin-top: 1vw; width: 96%; margin-left: 2%">
+									<tr>
+										<td class="josefin" style="width:25%">
+											<span class="en josefin">Sar Channimol</span><span class="kh josefin">ស ច័ន្ទនិមល</span>
+										</td>
+										<td class="josefin" style="width:25%">
+											<span class="en josefin">S&acirc;r Thyrith</span><span class="kh josefin">សរ ធីរិទ្ធ</span>
+										</td>
+										<td class="josefin" style="width:25%">
+											<span class="en josefin">Sun Sophearoth</span><span class="kh josefin">ស៊ុន សុភារដ្ឋ</span>
+										</td>
+										<td class="josefin" style="width:25%">
+											<span class="en josefin">Tang Sokkang</span><span class="kh josefin">តាំង សុខកាំង</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div id="creditpage" style="padding-bottom: 20vh; position: relative; transition: 1s">
+					<!-- the credit page here -->
+					<div class="Phearoth-style brunoace" id="creditpage1">
+						<div class="fadeInDown animated" style="height: 6vw; position: fixed; width: 100vw;left: 0vw; top: 0vh; background: #653a91; box-shadow: 0px 5px 8px #888888;">
+							<span class="en josefin">Credit to</span><span class="kh josefin" style="font-size: 3vw">ក្រេឌីតជូន</span>
+						</div>
+					</div>
+					<div class="Phearoth-style fadeInRight animated" id="creditpage2" style="padding-top: calc(10vh + 6vw)">
+							<a class="Phearoth-image" target="_blank" href="https://google.com"><img style="width: 35vw" src="img/google.png"></a>
+					</div>
+					<div class="Phearoth-style fadeInRight animated" id="creditpage3" style="padding-top: calc(15vh + 6vw)">
+							<a class="Phearoth-image" target="_blank" href="https://w3schools.com"><img style="width: 40vw" src="img/w3school.png"></a>
+					</div>
+					<div class="Phearoth-style fadeInRight animated" id="creditpage4" style="padding-top: calc(10vh + 6vw)">
+							<a class="Phearoth-image" target="_blank" href="http://getbootstrap.com"><img style="width: 45vw" src="img/bootstrap.png"></a>
+					</div>
+					<div class="Phearoth-style fadeInRight animated" id="creditpage5" style="padding-top: calc(5vh + 6vw)">
+							<a class="Phearoth-image" target="_blank" href="https://stackoverflow.com"><img style="width: 45vw" src="img/stackoverflow.png"></a>
+					</div>
+					<div class="Phearoth-style fadeInRight animated" id="creditpage6" style="padding-top: calc(10vh + 6vw)">
+							<a class="Phearoth-image" target="_blank" href="https://jquery.com"><img style="width: 35vw" src="img/jquery.png"></a>
+					</div>
+					<div class="Phearoth-style fadeInRight animated" id="creditpage7" style="padding-top: calc(15vh + 6vw)">
+							<a class="Phearoth-image" target="_blank" href="https://wowjs.uk"><img style="width: 35vw" src="img/wowjs.png"></a>
+					</div>
+					<div class="Phearoth-style fadeInRight animated" id="creditpage8" style="padding-top: calc(10vh + 6vw)">
+							<a class="Phearoth-image" target="_blank" href="https://daneden.github.io/animate.css/"><img style="width: 65vw" src="img/animate-css.png"></a>
+					</div>
+					<div class="Phearoth-style fadeInRight animated" id="creditpage9" style="padding-top: calc(15vh + 6vw)">
+							<a class="Phearoth-image" target="_blank" href="http://www.adobe.com/products/photoshop.html"><img style="width: 25vw" src="img/photoshop.png"></a>
+					</div>
+					<div class="Phearoth-style fadeInRight animated" id="creditpage10" style="padding-top: calc(15vh + 6vw)">
+							<a class="Phearoth-image" target="_blank" href="https://www.google.com/chrome/"><img style="width: 25vw" src="img/chrome.png"></a>
+					</div>
+					<div class="Phearoth-style fadeInRight animated" id="creditpage11" style="padding-top: calc(15vh + 6vw)">
+							<a class="Phearoth-image" target="_blank" href="http://itc.edu.kh"><img style="width: 25vw" src="img/gic.png"></a>
+					</div>
+
+					<!-- <script type="text/javascript">
+						var creditPage = document.getElementById('creditpage');
+						var theTop = 0;
+						creditPage.onwheel = function(e){
+							var evt=window.event || e; //equalize event object
+	    					var delta=evt.detail? evt.detail*(-1) : evt.wheelDelta; //delta returns +120 when wheel is scrolled up, -120 when scrolled down
+						    if(delta > 0) {
+						    	
+					   			var id1 = setInterval(function() {
+					   				if (theTop > 0) {
+					   					clearInterval(id1);
+					   				} else {
+					   					clearInterval(id2);
+					   					theTop += 1;
+					   					//document.getElementById('creditpage1').innerHTML = ""+theTop;
+					   					delta = 0;
+					   					creditPage.style.top = theTop + 'vh';
+					   					clearInterval(id1);
+					   					// alert('down');
+					   				}
+					   			}, 10);
+					   			
+						    } else if(delta < 0) {
+						    	// alert('up');
+					   			var id2 = setInterval(function() {
+					   					clearInterval(id1);
+					   					theTop -= 1;
+					   					//document.getElementById('creditpage1').innerHTML = ""+theTop;
+					   					delta = 0;
+					   					creditPage.style.top = theTop + 'vh';
+					   					clearInterval(id2);
+					   					// alert('up');
+					   				}
+					   			}, 10);
+					   			
+						    }
+						};
+					</script> -->
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- self JS -->
+<script src="js/sidebarInvert.js"></script>
+<script src="js/managePage.js"></script>
+<script src="js/functionTest.js"></script>
+<script src="js/controlSideBar.js"></script>
+<script src="js/initialVariable.js"></script>
+<script src="js/eyeindex.js"></script>
+
+</body>
+</html>
